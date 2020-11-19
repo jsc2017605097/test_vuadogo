@@ -1,0 +1,9 @@
+POST http://localhost:3001/api/donhang
+Content-Type: application/json
+
+{
+    "name":"Nguyen Van A",
+    "phone":"15646112",
+    "address":"Hop Tien - My Duc - Ha Noi",
+    "product":[{"_id":"5fb5086a56b4c5338ca86c8f","soluong":2}]
+}
