@@ -56,7 +56,6 @@ td{
     min-width: 100px;
 }
 .MuiCardContent-root{
-    height:196px !important;
     overflow: auto;
 }
 .nav-a a{

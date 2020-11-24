@@ -69,7 +69,7 @@ app.get("/product/:id", async function (req, response) {
   });
 });
 //-----------------
-app.use("/api/user", middleware.checkToken, userRouter);
+app.use("/api/user", userRouter);
 app.use("/api/login", loginRouter);
 app.use("/api/category", categoryRouter);
 app.use("/api/product", productRouter);
