@@ -14,6 +14,7 @@ import checkDataReducer from './reducers/checkGetData'
 import { BrowserRouter as Router } from 'react-router-dom'
 import thunk from 'redux-thunk'
 import cartReducer from './reducers/cart'
+import donhang from './reducers/donhang'
 
 const reducer = combineReducers({
   user: userReducer,
@@ -23,7 +24,8 @@ const reducer = combineReducers({
   filter: filter,
   checkGetProduct: checkDataReducer.getProduct,
   cart: cartReducer.cartReducer,
-  alert:cartReducer.alertSuccess
+  alert:cartReducer.alertSuccess,
+  donhang:donhang
 })
 
 const store = createStore(reducer, composeWithDevTools(applyMiddleware(thunk)))
